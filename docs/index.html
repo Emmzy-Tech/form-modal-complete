@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Modal</title>
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div id="form-overlay"></div>
+        <nav>
+            <div class="logo">CapacityBay</div>
+            <div id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar rem"></span>
+            </div>
+            <ul id="fall">
+                <li>Menu</li>
+                <li>Services</li>
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <div class="quote-btn">
+            <button onclick="myFunction()">Get Quotes</button>
+        </div>
+
+        <div class="form-modal" id="mform">
+
+            <div class="close" onclick="thisFunction()"><i class="fa fa-close"></i></div>
+            <h2>Register</h2>
+            <div class="row1">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div class="row2">
+                <input type="email" placeholder="E-mail Address">
+                <input id="see" type="password" placeholder="Password">
+                <div id="see-icon" onclick="passSee()"><i class="fa fa-eye" id="eye-color"></i></div>
+            </div>
+            <input id="see2" class="confirm" type="password" placeholder="Confirm password">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="content">
+            <h1>Welcome to CapacityBay</h1>
+            <h3>Are You Ready to Become a Programmer?</h3>
+            <p>We at CapacityBay.org train young and vibrant youths who are ready to take and also give to others when
+                required so are you ready and interested?</p>
+            <a href="#servi"> See Our Agent</a>
+        </div>
+    </div>
+    <div class="service-container switch-testb" id="servi">
+            <div class="box-container">
+                <div class="box" id="switch-test">
+                    <div class="box-nav">
+                        <li><i class="fa fa-arrow-left i-l w"></i></li>
+                        <div class="secondset">
+                        <li><i class="fa fa-ellipsis-v" ></i></li>
+                        <li><i class="fa fa-heart-o"></i></li>
+                    </div>
+                    </div>
+                    <div class="box-img">
+                       <div class="emm"><img src="EMMA.jpg" alt="Clipart"></div>
+                        <div class="box-tick"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div class="box-text" ><h1>EmmzyTech</h1>
+                 <h3 >Web Developer</h3>  
+                 <div class="box-text-product ">Creative usable interface and Designs @CapacityBay.org</div>
+                </div>
+                    <button class="hire-me">Hire Me</button>
+                    
+                    <div class="box-ballon ">
+                        <div class="ballon one">
+                            <div class="ballon-ball"><i class="fa fa-behance"></i></div>
+                            <div class="ballon-text">
+                                <h4>12.8k</h4>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                        <div class="ballon one">
+                            <div class="ballon-ball"><i class="fa fa-facebook"></i></div>
+                            <div class="ballon-text">
+                                <h4>12.8k</h4>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                        <div class="ballon one">
+                            <div class="ballon-ball"><i class="fa fa-whatsapp"></i></div>
+                            <div class="ballon-text">
+                                <h4 >12.8k</h4>
+                                <p >Followers</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="box2" id="switch-test2">
+                    <div class="box-nav">
+                        <li><i class="fa fa-arrow-left i-l w" id="switch-testc"></i></li>
+                        <div class="secondset">
+                        <li><i class="fa fa-ellipsis-v switch-testc" ></i></li>
+                        <li><i class="fa fa-heart-o switch-testc"></i></li>
+                    </div>
+                    </div>
+                    <div class="box-img">
+                       <div class="emm"><img src="EMMA.jpg" alt="Clipart"></div>
+                        <div class="box-tick"><i class="fa fa-check"></i></div>
+                    </div>
+                    <div class="box-text"><h1>EmmzyTech</h1>
+                 <h3>Web Developer</h3>  
+                 <div class="box-text-product">Creative usable interface and Designs @CapacityBay.org</div>
+                </div>
+                    <button class="hire-me">Hire Me</button>
+                    
+                    <div class="box-ballon ">
+                        <div class="ballon one">
+                            <div class="ballon-ball switch-test1"><i class="fa fa-behance"></i></div>
+                            <div class="ballon-text">
+                                <h4>12.8k</h4>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                        <div class="ballon one">
+                            <div class="ballon-ball switch-test"><i class="fa fa-facebook"></i></div>
+                            <div class="ballon-text">
+                                <h4 >12.8k</h4>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                        <div class="ballon one">
+                            <div class="ballon-ball switch-test3"><i class="fa fa-whatsapp"></i></div>
+                            <div class="ballon-text">
+                                <h4>12.8k</h4>
+                                <p>Followers</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <!-- <div class="box">
+                 
+                </div> -->
+
+            </div>
+            <div class="switch-btn">
+                <button id="scam" onclick="lightMode()">Light Mode</button>
+            </div>
+            <div class="switch-btn2" id="scamming">
+                <button onclick="darkMode()">Dark Mode</button>
+            </div>
+            <div class="up-btn">
+                <a href="#"><i class="fa fa-arrow-up"></i></a>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+</body>
+
+</html>
